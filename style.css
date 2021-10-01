@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html {
+  scroll-behavior:smooth ;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+img{
+  width: 125px;
+}
+i {
+  font-size: 25px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+.card-front-1,.card-front-2:active {
+  transform: rotateY(0);
+  transition: 0s;
+}
+
+.card-front-1, .card-back {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  backface-visibility: hidden;
+}
+
+.card-front-1 {
+  display: flex;
+}
+
+.card-front-2{
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card-back h2{
+  color: #000000;
+}
+
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.card-back:hover {
+  transform: rotateY(180deg);
+}
+
+.form {
+  display: flex;
+  margin: 25px auto;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0,0,0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 300px;
+}
+
+.form-input,.form-button {
+  font-family: inherit;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  border: 0;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 1.5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.form-input::placeholder{
+  opacity: 0.35;
+}
+
+.form-input:focus::placeholder{
+  color: #000000;
+  opacity: 0.85;
+}
+
+.form-item:first-of-type{
+  position: relative;
+}
+
+.form-item:first-of-type::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  bottom: rgba(0, 0, 0, 0.1);
+}
+
+.form-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1.25rem 2.25rem;
+  cursor: pointer;
+}
+
+.form-button:hover{
+  cursor: pointer;
+
+}
+
+
+.social-list {
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 125px;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-link {
+  color: #000000;
+  font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+
+.profile-name {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.profile-name::after {
+  content: "";
+  height: 5px;
+  display: block;
+  width: 7.5rem;
+  background-color: #ffffff;
+  margin: 1rem auto 0.5rem;
+  opacity: 0.7;
+}
+
+.profile-position {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.profile-body {
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .profile-main {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .profile-name::after {
+    margin-left: 0;
+    width: 18.8rem;
+  }
+
+  .form{
+    flex-direction: row;
+    max-width: 600px;
+    border: 10px solid #ffffff;
+    border-radius: 3rem;
+  }
+
+  .form-button{
+    margin-left: auto;
+    border-radius: 3rem;
+  }
+
+  .form-input {
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  .form-item:first-of-type::after{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: initial;
+    width: 1px;
+    height: initial;
+  }
+
+}
