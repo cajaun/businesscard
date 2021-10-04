@@ -55,6 +55,7 @@ i {
   transform-style: preserve-3d;
   position: relative;
   transition: all 0.8s ease;
+  user-select: none;
 }
 
 .card-front-1, .card-back {
@@ -84,7 +85,7 @@ i {
   bottom: 0;
   display: flex;
   transform-style: preserve-3d;
-  transition: 1s;
+  transition: all 0.8s ease;
 }
 
 
