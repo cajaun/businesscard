@@ -88,6 +88,12 @@ i {
   transition: all 0.8s ease;
 }
 
+.card-back:active {
+  transition: 0s;
+  transform-style: none;
+  transform: rotateY(0deg);
+}
+
 
 
 .card-back h2{
