@@ -19,7 +19,7 @@ html {
 body{
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  min-height: 90vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   background:linear-gradient(102.28deg, rgba(231, 189, 251, 0.5) -7.7%, rgba(250, 208, 218, 0.5) 38.01%, rgba(168, 198, 243, 0.5) 91.43%);
@@ -54,7 +54,7 @@ i {
   padding: 2rem;
   transform-style: preserve-3d;
   position: relative;
-  transition: 0.8s ease;
+  transition: 0.6s ease;
   user-select: none;
 }
 
@@ -85,7 +85,7 @@ i {
   bottom: 0;
   display: flex;
   transform-style: preserve-3d;
-  transition:  0.8s ease;
+  transition:  0.6s ease;
 }
 
 .card-back:active {
@@ -148,7 +148,7 @@ button:hover {
 .card-back:hover {
   transform: rotateY(180deg);
   box-shadow: 0 0 30px rgba(0,0,0, 10);
-  transition: 0.8s ease ;
+  transition: 0.6s ease ;
 
 }
 
