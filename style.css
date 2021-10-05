@@ -69,6 +69,7 @@ i {
 .card-front {
   display: flex;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 
