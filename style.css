@@ -63,18 +63,15 @@ i {
   height: 100%;
   flex-direction: column;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; 
 }
 
 .card-front-1 {
   display: flex;
   backface-visibility: hidden;
-  -webkit-backface-visibility: visible; 
 }
 
 .card-front-2{
   backface-visibility: hidden;
-  -webkit-backface-visibility: visible; 
 }
 
 .card-back {
