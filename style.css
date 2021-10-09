@@ -74,7 +74,6 @@ i {
   flex-direction: column;
   position: absolute;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .card-front{
@@ -85,9 +84,6 @@ i {
   backface-visibility: hidden;
 }
 
-.card-front{
-  backface-visibility: hidden;
-}
 
 .card-back {
   transform: rotateY(180deg) translateZ(2px);
