@@ -56,7 +56,6 @@ i {
   perspective: 1000px;
   position: relative;
   transition: 0.6s ease;
-  user-select: none;
 }
 
 .card-front, .card-back {
@@ -65,6 +64,7 @@ i {
   flex-direction: column;
   position: absolute;
   backface-visibility: hidden;
+  user-select: none;
 }
 
 .card-front {
